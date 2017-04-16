@@ -1,0 +1,19 @@
+{
+  "name": "restaurant_guide",
+  "version": "1.0.0",
+  "description": "simple mean stack application that allows to search for restaurants, create new ones and update or delete existing ones.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infomediadesign/sad-2017-sw-01-M11004061.git"
+  },
+  "author": "Marcus Ritter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/infomediadesign/sad-2017-sw-01-M11004061/issues"
+  },
+  "homepage": "https://github.com/infomediadesign/sad-2017-sw-01-M11004061#readme"
+}
