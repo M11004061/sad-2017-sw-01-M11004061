@@ -1,0 +1,37 @@
+1.) start mongodb server
+
+mongod --dbpath C:\Users\Marcus\git\sad-2017-sw-01-M11004061\data\db
+
+2.) connect with mongo client:
+
+mongo
+
+//// or /////
+
+1.) start MongoDB service:
+
+net start MongoDB
+
+2.) connect with client
+
+mongo
+
+3.) close client
+
+exit
+
+4.) stop MongoDB service:
+
+net stop MongoDB
+
+
+//// mongodb services ////
+
+create MongoDB service:
+
+sc.exe create MongoDB binPath= "\"C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe\" --service --config=\"C:\Program Files\MongoDB\Server\3.4\mongod.cfg\"" DisplayName= "MongoDB" start= "auto"
+
+
+remove MongoDB service:
+
+"C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe" --remove
