@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/infomediadesign/sad-2017-sw-01-M11004061/issues"
   },
-  "homepage": "https://github.com/infomediadesign/sad-2017-sw-01-M11004061#readme"
+  "homepage": "https://github.com/infomediadesign/sad-2017-sw-01-M11004061#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
