@@ -1,3 +1,12 @@
+//// mongo DB info ////
+
+dbname: test
+collections: restaurants
+
+
+//// use the database ////
+
+(always start as service MongoDB, not with mongod!!!)
 1.) start mongodb server
 
 mongod --dbpath C:\Users\Marcus\git\sad-2017-sw-01-M11004061\data\db
@@ -5,6 +14,7 @@ mongod --dbpath C:\Users\Marcus\git\sad-2017-sw-01-M11004061\data\db
 2.) connect with mongo client:
 
 mongo
+
 
 //// or /////
 
@@ -25,7 +35,7 @@ exit
 net stop MongoDB
 
 
-//// mongodb services ////
+//// mongodb services installation ////
 
 create MongoDB service:
 
@@ -35,3 +45,8 @@ sc.exe create MongoDB binPath= "\"C:\Program Files\MongoDB\Server\3.4\bin\mongod
 remove MongoDB service:
 
 "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe" --remove
+
+
+//// import sample data set (restaurants) ////
+
+mongoimport --db test --collection restaurants --drop --file C:/Users/Marcus/Desktop/primer-dataset.json
