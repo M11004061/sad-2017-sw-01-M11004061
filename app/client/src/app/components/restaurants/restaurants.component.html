@@ -1,17 +1,19 @@
 <form class="well">
 	<div class="form-group">
-		<input type="text" class="form-control" placeholder="Add Task List">
+		<input type="text" class="form-control" placeholder="Add a Restaurant">
 	</div>
 </form>
 
-<div class="task-list">
+<div class="restaurant-list">
+	<div *ngFor="let restaurants of restaurants">
 	<div class="col-md-1">
 		<input type="checkbox">
 	</div>
 	<div class="col-md-7">
-		Some Task
+		{{restaurant.name}}
 	</div>
 	<div class="col-md-4">
 		<input type="button" value="Delete" class="btn btn-danger">
+	</div>
 	</div>
 </div>
