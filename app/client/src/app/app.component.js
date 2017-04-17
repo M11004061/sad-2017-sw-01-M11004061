@@ -9,14 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var restaurant_service_1 = require('./services/restaurant.service');
 var AppComponent = (function () {
     function AppComponent() {
-        this.name = 'Angular';
     }
     AppComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'my-app',
-            template: "<h1>Hello {{name}}</h1>",
+            templateUrl: 'app.component.html',
+            providers: [restaurant_service_1.RestaurantService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

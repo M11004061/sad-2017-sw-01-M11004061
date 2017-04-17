@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import { RestaurantService } from './services/restaurant.service';
 
 @Component({
+  moduleId: module.id,
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  templateUrl: 'app.component.html',
+  providers:[RestaurantService]
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent  { }
