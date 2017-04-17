@@ -1,0 +1,22 @@
+{
+  "name": "restaurant_guide",
+  "description": "simple mean stack application that allows to search for restaurants, create new ones and update or delete existing ones.",
+  "main": "server.js",
+  "authors": [
+    "Marcus Ritter"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/infomediadesign/sad-2017-sw-01-M11004061",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/client/src/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
