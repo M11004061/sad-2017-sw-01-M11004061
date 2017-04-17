@@ -14,7 +14,7 @@ require('rxjs/add/operator/map');
 var RestaurantService = (function () {
     function RestaurantService(http) {
         this.http = http;
-        console.log('Task Service Initialized...');
+        console.log('Restaurant Service Initialized...');
     }
     RestaurantService.prototype.getRestaurants = function () {
         return this.http.get('http://localhost:3000/api/restaurants')
