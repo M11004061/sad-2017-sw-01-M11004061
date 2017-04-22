@@ -1,0 +1,324 @@
+{
+	"id": "d29e1d58-6903-477b-a2d7-904dcae7b427",
+	"name": "Restaurant CRUD REST API Test",
+	"allTests": [],
+	"timestamp": "2017-04-22T14:15:53.466Z",
+	"collection_id": "78f8e870-aa6a-e4b3-d528-0cc260ab3ee8",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "no-environment",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "78f8e870-aa6a-e4b3-d528-0cc260ab3ee8",
+		"name": "Restaurant CRUD REST API Test",
+		"description": "",
+		"order": [
+			"b9f31321-6948-d5e6-2203-61cb1ba64b9d",
+			"62312175-b682-c0be-2c99-b41a88a2ac03",
+			"0798a9a3-755e-f22a-7184-303107df9f0d",
+			"63b3a1c9-5a7f-faaa-5d3a-bc17878c71da",
+			"e01b82d1-b863-5dca-78e5-f11f3905cc17"
+		],
+		"folders": [],
+		"timestamp": 1492867253971,
+		"synced": false,
+		"remote_id": 0,
+		"owner": 0,
+		"sharedWithTeam": false,
+		"subscribed": false,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"createdAt": 1492867253971,
+		"updatedAt": 1492870318920,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {}
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "Call API GET All Restaurants",
+			"id": "b9f31321-6948-d5e6-2203-61cb1ba64b9d",
+			"url": "http://localhost:3000/api/restaurants",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"1867"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "1867",
+			"totalRequestTime": "1867",
+			"iterationResults": {}
+		},
+		{
+			"name": "Call API GET Single Restaurant",
+			"id": "62312175-b682-c0be-2c99-b41a88a2ac03",
+			"url": "http://localhost:3000/api/restaurant/58fb60a52a9ed326ecd0baca",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"20"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "20",
+			"totalRequestTime": "20",
+			"iterationResults": {}
+		},
+		{
+			"name": "Call API POST Save Restaurant",
+			"id": "0798a9a3-755e-f22a-7184-303107df9f0d",
+			"url": "http://localhost:3000/api/restaurant",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"15"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "15",
+			"totalRequestTime": "15",
+			"iterationResults": {}
+		},
+		{
+			"name": "Call API DELETE Delete Restaurant",
+			"id": "63b3a1c9-5a7f-faaa-5d3a-bc17878c71da",
+			"url": "http://localhost:3000/api/restaurant/58f39f0dbc29bf4322e34892",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"6"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "6",
+			"totalRequestTime": "6",
+			"iterationResults": {}
+		},
+		{
+			"name": "Call API PUT Change Restaurant",
+			"id": "e01b82d1-b863-5dca-78e5-f11f3905cc17",
+			"url": "http://localhost:3000/api/restaurant/58fb60a52a9ed326ecd0baca",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"6"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "6",
+			"totalRequestTime": "6",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 5,
+	"totalFail": 0,
+	"totalTime": 1914,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Call API GET All Restaurants",
+			"id": "b9f31321-6948-d5e6-2203-61cb1ba64b9d",
+			"url": "http://localhost:3000/api/restaurants",
+			"time": "2017-04-22T14:15:53.466Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Call API GET Single Restaurant",
+			"id": "62312175-b682-c0be-2c99-b41a88a2ac03",
+			"url": "http://localhost:3000/api/restaurant/58fb60a52a9ed326ecd0baca",
+			"time": "2017-04-22T14:15:53.466Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Call API POST Save Restaurant",
+			"id": "0798a9a3-755e-f22a-7184-303107df9f0d",
+			"url": "http://localhost:3000/api/restaurant",
+			"time": "2017-04-22T14:15:53.466Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Call API DELETE Delete Restaurant",
+			"id": "63b3a1c9-5a7f-faaa-5d3a-bc17878c71da",
+			"url": "http://localhost:3000/api/restaurant/58f39f0dbc29bf4322e34892",
+			"time": "2017-04-22T14:15:53.466Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Call API PUT Change Restaurant",
+			"id": "e01b82d1-b863-5dca-78e5-f11f3905cc17",
+			"url": "http://localhost:3000/api/restaurant/58fb60a52a9ed326ecd0baca",
+			"time": "2017-04-22T14:15:53.466Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
