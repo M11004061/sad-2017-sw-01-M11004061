@@ -10,6 +10,8 @@ collections: restaurants
 1.) start mongodb server
 
 mongod --dbpath C:\Users\Marcus\git\sad-2017-sw-01-M11004061\data\db
+cd C:\Program Files\MongoDB\Server\3.4\bin 
+mongod --dbpath "C:\Users\Marcus Ritter\git\sad-2017-sw-01-M11004061\data\db"
 
 2.) connect with mongo client:
 
