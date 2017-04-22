@@ -7,13 +7,13 @@ import {Restaurant} from '../../../../Restaurant';
   selector: 'restaurants',
   templateUrl: 'restaurants.component.html',
 })
-export class RestaurantsComponent  { 
+export class RestaurantsComponent  {
     restaurants: Restaurant[];
-    
-    constructor(private restaurantService:RestaurantService) {
+
+    constructor(private restaurantService: RestaurantService) {
         this.restaurantService.getRestaurants()
             .subscribe(restaurants => {
                 console.log(restaurants);
             });
-    }   
+    }
 }
