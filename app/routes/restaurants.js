@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
 var mongojs = require('mongojs');
-var db = mongojs('test', ['restaurants']);
+var db = mongojs('test', [ 'restaurants' ]);
 
 //Get all restaurants
-router.get('/restaurants', function(req, res, next){
-	db.restaurants.find(function(err, restaurants){
-		if(err){
+router.get('/restaurants', function(req, res, next) {
+	db.restaurants.find(function(err, restaurants) {
+		if (err) {
 			res.send(err);
 		}
 		res.json(restaurants);
@@ -14,9 +14,11 @@ router.get('/restaurants', function(req, res, next){
 });
 
 //Get one restaurants
-router.get('/restaurant/:id', function(req, res, next){
-	db.restaurants.findOne({_id: mongojs.ObjectId(req.params.id)}, function(err, restaurant){
-		if(err){
+router.get('/restaurant/:id', function(req, res, next) {
+	db.restaurants.findOne({
+		_id : mongojs.ObjectId(req.params.id)
+	}, function(err, restaurant) {
+		if (err) {
 			res.send(err);
 		}
 		res.json(restaurant);
@@ -24,27 +26,22 @@ router.get('/restaurant/:id', function(req, res, next){
 });
 
 //Save restaurant
-router.post('/restaurant', function(req, res, next){
+router.post('/restaurant', function(req, res, next) {
 	var restaurant = req.body;
-	if(!restaurant.title || (restaurant.isDone + '')){
-		res.status(400);
-		res.json({
-			"error": "Bad Data"
-		});
-	} else {
-		db.restaurants.save(restaurant, function(err, restaurant){
-			if(err){
-				res.send(err);
-			}
-			res.json(restaurant);
-		});
-	}
+	db.restaurants.save(restaurant, function(err, restaurant) {
+		if (err) {
+			res.send(err);
+		}
+		res.json(restaurant);
+	});
 });
 
 //Delete restaurant
-router.delete('/restaurant/:id', function(req, res, next){
-	db.restaurants.remove({_id: mongojs.ObjectId(req.params.id)}, function(err, restaurant){
-		if(err){
+router.delete('/restaurant/:id', function(req, res, next) {
+	db.restaurants.remove({
+		_id : mongojs.ObjectId(req.params.id)
+	}, function(err, restaurant) {
+		if (err) {
 			res.send(err);
 		}
 		res.json(restaurant);
@@ -52,31 +49,16 @@ router.delete('/restaurant/:id', function(req, res, next){
 });
 
 //Update restaurant
-router.put('/restaurant/:id', function(req, res, next){
+router.put('/restaurant/:id', function(req, res, next) {
 	var restaurant = req.body;
-	var updTask = {};
-	
-	if(restaurant.isDone){
-		updTask.isDone = task.isDone;
-	}
-	
-	if(restaurant.title){
-		updTask.title = task.title;
-	}
-	
-	if(!updTask){
-		res.status(400);
-		res.json({
-			"error":"Bad Data"
-		});
-	} else {
-		db.restaurants.update({_id: mongojs.ObjectId(req.params.id)}, updTask, {}, function(err, restaurant){
-			if(err){
-				res.send(err);
-			}
-			res.json(restaurant);
-		});
-	}
+	db.restaurants.update({
+		_id : mongojs.ObjectId(req.params.id)
+	}, restaurant, {}, function(err, restaurant) {
+		if (err) {
+			res.send(err);
+		}
+		res.json(restaurant);
+	});
 });
 
 module.exports = router;
