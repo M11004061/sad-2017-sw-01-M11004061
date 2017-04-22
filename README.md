@@ -31,3 +31,14 @@ The CRUD REST API for the restaurants was tested using postman. The postman test
 
 ![postman test image 1](https://github.com/infomediadesign/sad-2017-sw-01-M11004061/blob/master/postman_crud_rest_api_test/postman_api_test_get_all.png)
 
+##### GET, fetch single restaurant
+![postman test image 2](https://github.com/infomediadesign/sad-2017-sw-01-M11004061/blob/master/postman_crud_rest_api_test/postman_api_test_get_single.png)
+
+##### POST, save restaurant
+![postman test image 3](https://github.com/infomediadesign/sad-2017-sw-01-M11004061/blob/master/postman_crud_rest_api_test/postman_api_test_save.png)
+
+##### DELETE, delete restaurant
+![postman test image 4](https://github.com/infomediadesign/sad-2017-sw-01-M11004061/blob/master/postman_crud_rest_api_test/postman_api_test_delete.png)
+
+##### PUT, update restaurant
+![postman test image 5](https://github.com/infomediadesign/sad-2017-sw-01-M11004061/blob/master/postman_crud_rest_api_test/postman_api_test_update.png)
