@@ -1,4 +1,4 @@
-SAD individual assignement Marcus Ritter - M11004061, 29.04.2017
+SAD individual assignment Marcus Ritter - M11004061, 29.04.2017
 
 
 # New York City Restaurant Guide
