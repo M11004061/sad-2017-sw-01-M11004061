@@ -3,16 +3,21 @@
 <head>
 <title>NYC Restaurant Guide</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="/">
-
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	crossorigin="anonymous">
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="./controllers/controller.js"></script>
 
 <!-- jQuery library -->
@@ -39,51 +44,48 @@
 </script>
 </head>
 <body>
-<div class="container" ng-controller="myController">
-			<h1>
-			NYC Restaurant Guide
-			</h1>
+	<div class="container" ng-controller="myController">
+		<h1>NYC Restaurant Guide</h1>
 
-			<table class="table">
-				<thead>
-					<th>Name</th>
-					<th>Cuisine</th>
-					<th>Borough</th>
-					<th>Street</th>
-					<th>Building</th>
-					<th>Zipcode</th>
-				</thead>
-				<tbody>
-					<tr>
-						<td><input class="form-control" ng-model="restaurant.name"></td>
-						<td><input class="form-control" ng-model="restaurant.cuisine"></td>
-						<td><input class="form-control" ng-model="restaurant.borough"></td>
-						<td><input class="form-control" ng-model="restaurant.address.street"></td>
-						<td><input class="form-control" ng-model="restaurant.address.building"></td>
-						<td><input class="form-control" ng-model="restaurant.address.zipcode"></td>
-						<td><button class="btn btn-primary" ng-click="addRestaurant()">Add Restaurant</button></td>
-						<td><button class="btn btn-info" ng-click="update()">Update</button>&nbsp;&nbsp;<button class="btn btn-info" ng-click="deselect()">Clear</button></td>
-					</tr>
-					<tr ng-repeat="restaurant in restaurants">
-						<td>{{restaurant.name}}</td>
-						<td>{{restaurant.cuisine}}</td>
-						<td>{{restaurant.borough}}</td>
-						<td>{{restaurant.address.street}}</td>
-						<td>{{restaurant.address.building}}</td>
-						<td>{{restaurant.address.zipcode}}</td>
-						<td><button class="btn btn-danger" ng-click="remove(contact._id)">Delete</button></td>
-          				<td><button class="btn btn-warning" ng-click="edit(contact._id)">Edit</button></td>
-					</tr>
-				</tbody>
-			</table>
-
-			
-
-		</div>
-
-			
-		
-
-		
-	</body>
+		<table class="table">
+			<thead>
+				<th>Name</th>
+				<th>Cuisine</th>
+				<th>Borough</th>
+				<th>Street</th>
+				<th>Building</th>
+				<th>Zipcode</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input class="form-control" ng-model="restaurant.name"></td>
+					<td><input class="form-control" ng-model="restaurant.cuisine"></td>
+					<td><input class="form-control" ng-model="restaurant.borough"></td>
+					<td><input class="form-control"
+						ng-model="restaurant.address.street"></td>
+					<td><input class="form-control"
+						ng-model="restaurant.address.building"></td>
+					<td><input class="form-control"
+						ng-model="restaurant.address.zipcode"></td>
+					<td><button class="btn btn-primary" ng-click="addRestaurant()">Add
+							Restaurant</button></td>
+					<td><button class="btn btn-info" ng-click="update()">Update</button>&nbsp;&nbsp;
+						<button class="btn btn-info" ng-click="deselect()">Clear</button></td>
+				</tr>
+				<tr ng-repeat="restaurant in restaurants">
+					<td>{{restaurant.name}}</td>
+					<td>{{restaurant.cuisine}}</td>
+					<td>{{restaurant.borough}}</td>
+					<td>{{restaurant.address.street}}</td>
+					<td>{{restaurant.address.building}}</td>
+					<td>{{restaurant.address.zipcode}}</td>
+					<td><button class="btn btn-danger"
+							ng-click="remove(contact._id)">Delete</button></td>
+					<td><button class="btn btn-warning"
+							ng-click="edit(contact._id)">Edit</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
 </html>
